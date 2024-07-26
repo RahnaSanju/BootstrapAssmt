@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:white">
+        <div class="container-fluid m-2">
+            <a class="navbar-brand" href="#"><img src="flipKartLogo.png"  alt="Flipkart" title="Flipkart"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle-navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <input class="form-control me-2" type="search" placeholder="Search for Products,Brands and More" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mt-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Login
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:white">
+                            <li><a class="dropdown-item" href="#">New Customer</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">My Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Flipkart Plus Zone</a></li>
+                            <li><a class="dropdown-item" href="#">Orders</a></li>
+                            <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                            <li><a class="dropdown-item" href="#">Rewards</a></li>
+                            <li><a class="dropdown-item" href="#">Giftcards</a></li>
+                        </ul>    
+                    </li>
+                    
+                    <li class="nav-item" mt-2>
+                        <a class="nav-link" href="#"><img src="Cart.png"  alt="Cart" title="Cart" height="40px" width="40px"></a>
+                    </li>
+                    <li class="nav-item" mt-2>
+                        <a class="nav-link" href="#"><img src="BecomeASeller.png"  alt="BecomeASeller" title="BecomeASeller" height="40px" width="40px"></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mt-1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="ExtDrpdwn.png"  alt="Cart" title="Dropdown with more help links" height="40px" width="40px">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:white">
+                            <li><a class="dropdown-item" href="#">Notification Preferences</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">24x7 Customer Care</a></li>
+                            <li><a class="dropdown-item" href="#">Flipkart Plus Zone</a></li>
+                            <li><a class="dropdown-item" href="#">Advertise</a></li>
+                            <li><a class="dropdown-item" href="#">Download App</a></li>
+                        </ul>    
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- carousel -->
+    <div id="FlipkartCarousel" class="carousel slide carousel-dark" data-bs-carousel="carousel" data-bs-ride="carousel" data-interval="200">
+        <div class="carousel-inner" >
+            <div class="carousel-item active" style="height: 350px;">
+                <img src="Carousel1.png" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+                <img src="Carousel2.png" class="d-block w-100 h-100"  alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+                <img src="Carousel3.png" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+                <img src="Carousel4.png" class="d-block w-100 h-100" alt="...">
+            </div>
+        </div>
+        <button type="button" class="carousel-control-prev" data-bs-target="#FlipkartCarousel" data-bs-slide="prev" >
+            <span class="carousel-control-prev-icon me-auto mt-lg-3" ></span>
+        </button>
+        <button type="button" class="carousel-control-next"  data-bs-target="#FlipkartCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#FlipkartCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#FlipkartCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#FlipkartCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#FlipkartCarousel" data-bs-slide-to="3"></button>
+        </div>
+    </div>
+
+    <!-- card -->
+    <div class="container-fluid m-3">
+        <h3>Best Deals on Electronics</h3>
+        <form class="d-flex">
+            <div class="card m-2" style="width:200px; height:300px;">
+                <img class="card-img-top" src="cardImage1.png" alt="Card image" style="width:100%; height:75%" />
+                <div class="card-body text-center">
+                    <p class="card-title">boAT Smartwatches</p>
+                    <h6 class="card-title">Sale Price Live</h6>
+                </div>
+            </div>
+        
+        
+            <div class="card m-2" style="width:200px; height:300px;">
+                <img class="card-img-top" src="cardImage2.png" alt="Card image" style="width:100%; height:75%" />
+                <div class="card-body text-center">
+                    <p class="card-title">viewSonic Monitors</p>
+                    <h6 class="card-title">Top Rated!!</h6>
+                </div>
+            </div>
+
+            <div class="card m-2" style="width:200px; height:300px;">
+                <img class="card-img-top" src="cardImage3.png" alt="Card image" style="width:100%; height:75%" />
+                <div class="card-body text-center">
+                    <p class="card-title">Top Mirrorless Cameras</p>
+                    <h6 class="card-title">Shop Now!</h6>
+                </div>
+            </div>
+
+            <div class="card m-2" style="width:200px; height:300px;">
+                <img class="card-img-top" src="cardImage4.png" alt="Card image" style="width:100%; height:75%" />
+                <div class="card-body text-center">
+                    <p class="card-title">Best Selling Mobile Speakers</p>
+                    <h6 class="card-title">From ₹499*</h6>
+                </div>
+            </div>
+
+            <div class="card m-2" style="width:200px; height:300px;">
+                <img class="card-img-top" src="cardImage5.png" alt="Card image" style="width:100%; height:75%" />
+                <div class="card-body text-center">
+                    <p class="card-title">Best Truewireless Headphones</p>
+                    <h6 class="card-title">Grab Now*</h6>
+                </div>
+            </div>
+
+            <div class="card m-2" style="width:200px; height:300px;">
+                <img class="card-img-top" src="cardImage7.png" alt="Card image" style="width:100%; height:75%" />
+                <div class="card-body text-center">
+                    <p class="card-title">Printers</p>
+                    <h6 class="card-title">From ₹3999*</h6> 
+                </div>
+            </div>
+        </form>
+        
+    </div>
+
+</body>
+</html>
